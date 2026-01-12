@@ -1,0 +1,20 @@
+name: Circular Dependency Hunter
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  hunt:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: supermodeltools/dead-code-hunter@v1
+        with:
+          supermodel-api-key: ${{ secrets.SUPERMODEL_API_KEY }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
