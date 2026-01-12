@@ -1,0 +1,8 @@
+{
+  "name": "circular-sample",
+  "version": "0.1.0",
+  "description": "Small sample project with circular dependencies for testing.",
+  "private": true,
+  "type": "commonjs",
+  "main": "src/index.js"
+}
