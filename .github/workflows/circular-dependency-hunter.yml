@@ -21,7 +21,7 @@ jobs:
           ls -la
           git status -s
           git ls-tree -r --name-only HEAD
-      - uses: jtanSE/circular-dependency-hunter@830c34537b39af31f001cdb45b5fc93014eb0c3f
+      - uses: jtanSE/circular-dependency-hunter@58cacd0ff1da41ab3e5d1332e7f9fb90cc002562
         with:
           supermodel-api-key: ${{ secrets.SUPERMODEL_API_KEY }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
