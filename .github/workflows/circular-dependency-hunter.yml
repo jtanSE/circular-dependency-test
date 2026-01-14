@@ -2,6 +2,7 @@ name: Circular Dependency Hunter
 
 on:
   pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
