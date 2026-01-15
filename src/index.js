@@ -1,8 +1,8 @@
-const library = require("./library");
-const catalog = require("./catalog");
-const book = require("./book");
-const member = require("./member");
-const loan = require("./loan");
+import library from "./library.js";
+import catalog from "./catalog.js";
+import book from "./book.js";
+import member from "./member.js";
+import loan from "./loan.js";
 
 console.log("library", library.name, library.activeLoanType);
 console.log("catalog", catalog.name, catalog.featuredTitle);

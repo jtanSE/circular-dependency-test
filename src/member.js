@@ -1,6 +1,6 @@
-const loan = require("./loan");
+import loan from "./loan.js";
 
-module.exports = {
+export default {
   name: "Member-001",
-  currentLoanType: loan.type
+  currentLoanType: loan.type,
 };
