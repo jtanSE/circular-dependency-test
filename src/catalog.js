@@ -1,6 +1,6 @@
-const book = require("./book");
+import book from "./book.js";
 
-module.exports = {
+export default {
   name: "Main Catalog",
-  featuredTitle: book.title
+  featuredTitle: book.title,
 };

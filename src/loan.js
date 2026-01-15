@@ -1,6 +1,6 @@
-const member = require("./member");
+import member from "./member.js";
 
-module.exports = {
+export default {
   type: "In-Library",
-  borrower: member.name
+  borrower: member.name,
 };

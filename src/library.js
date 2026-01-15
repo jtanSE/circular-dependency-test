@@ -1,8 +1,8 @@
-const catalog = require("./catalog");
-const loan = require("./loan");
+import catalog from "./catalog.js";
+import loan from "./loan.js";
 
-module.exports = {
+export default {
   name: "Central Library",
   catalogName: catalog.name,
-  activeLoanType: loan.type
+  activeLoanType: loan.type,
 };

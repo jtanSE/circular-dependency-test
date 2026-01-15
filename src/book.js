@@ -1,6 +1,6 @@
-const library = require("./library");
+import library from "./library.js";
 
-module.exports = {
+export default {
   title: "The Stack Trace",
-  homeLibrary: library.name
+  homeLibrary: library.name,
 };
